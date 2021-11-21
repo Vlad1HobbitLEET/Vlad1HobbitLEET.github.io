@@ -1,3 +1,17 @@
+body {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  height: 100%;
+  margin:0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: #FFA500;
+    border-radius: 0px 0px 40px 40px;
+    height: 50px;
+}
+
 section {
   height: 100vh;
   display: flex;
@@ -5,63 +19,79 @@ section {
   align-items: center;
   color: #fff;
 }
-.main {
-  background-color: #27ae60;
-}
-.news {
-  background-color: #9b59b6;
-}
-.contacts {
-  background-color: #3498db;
-}
-.portfolio {
-  background-color: #f1c40f;
-}
-.wrapper {
-  position: relative;
-  overflow-x: hidden;
-}
+
 .menu {
   position: fixed;
-  left: 0;top: 0;
+  left: 0;top: 0px;
   z-index: 99;
-  width: 30%;
+  width: 40%;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #fff;
+  opacity: 0.95;
   transition: 0.5s;
   transform: translateX(-100%);
 }
 .menu_active {
   transform: translateX(0%);
 }
-.menu-list {
+
+.menu-list, .menu-list2 {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   height: 50%;
   flex-direction: column;
 }
-.menu-list a {
+.menu-list a, .menu-list2 a {
+    line-height: 29px;
+    font-weight: 500;
+    line-height: 1.19;
+  color: #502314;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
+  align-items: center;
 }
+
+.menu-list a {
+  font-size: 26px;
+}
+.menu-list2 a {
+  font-size: 16px;
+}
+
 .menu-btn {
+  cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: #333;
+  background-color: #FF6347;
   position: absolute;
-  right: -35px;
+  right: -60px;
   top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
-.content {
-  transition: 0.5s;
-  position: relative;
-  z-index: 0;
+
+.icon {
+  width: 30px;
 }
-.content_active {
-  transform: translateX(30%);
+
+.promo img {
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 25px 0px; 
+  background: #FFA500;
+  border-radius: 40px 40px 0px 0px;
+}
+
+footer a {
+  margin: 5px;
 }
