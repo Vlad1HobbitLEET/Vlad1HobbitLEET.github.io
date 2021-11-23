@@ -25,7 +25,7 @@ section {
   left: 0;top: 0px;
   z-index: 99;
   width: 40%;
-  height: 100vh;
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -41,7 +41,7 @@ section {
 .menu-list, .menu-list2 {
   display: flex;
   justify-content: space-around;
-  height: 50%;
+  height: 75%;
   flex-direction: column;
 }
 .menu-list a, .menu-list2 a {
@@ -62,9 +62,9 @@ section {
 }
 
 .menu-btn {
-  cursor: pointer;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-color: #FF6347;
   position: absolute;
   right: -60px;
@@ -80,6 +80,11 @@ section {
 }
 
 .promo img {
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top:0px;
+  width: 100%;
 }
 
 
@@ -94,4 +99,15 @@ footer {
 
 footer a {
   margin: 5px;
+}
+  
+@media (max-width: 768px) {
+  .menu-btn {
+    width: 100px;
+    height: 100px;
+    cursor: none;
+    align-items: none;
+    background-color: black;
+  }
+
 }
